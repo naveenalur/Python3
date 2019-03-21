@@ -1,0 +1,26 @@
+age = 10
+print("my age is {0}".format(age))
+print("------------------------------")
+print("""
+My date of birth is 
+Day"{0}" - Month"{1}"
+year "{2}"
+""".format(1,11,1995))
+
+print("-----Printing squares and Cubes---------")
+
+#%d is place holder for integer
+#"%s " is place holder for string
+
+number=int(input("Enter the number :"))
+for i in range(0,number):
+    print("No. %2d  squared is %4d and Cubed is %6d" %(i,i**2,i**3) )
+
+print("Another way for above one is ....\n")
+print("If a want to allocate my digt to left align  i will use \"<\"")
+for i in range(0,number):
+    print("No. {0:<2}  squared is {1:<4} and Cubed is {2:<6}".format(i,i**2,i**3) )
+
+print("The PI value is %12.30f"%(22/7))
+days = "Mon, Tue, Wed, Thu, Fri, Sat, Sun"
+print(days[::5])
